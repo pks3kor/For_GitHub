@@ -1,3 +1,7 @@
+"""
+Author : Pankaj soni
+"""
+
 from PySide import QtCore, QtGui
 import sys
 

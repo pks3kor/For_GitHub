@@ -21,7 +21,7 @@ def checkStatus():
     else :
         print "radioButton_2 is clicked"
 
-# now bin the above functions with buttons
+# now bind the above functions with buttons
 ui.radioButton.clicked.connect(checkStatus)
 ui.radioButton_2.clicked.connect(checkStatus)
 

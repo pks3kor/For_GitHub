@@ -18,7 +18,7 @@ ui.setupUi(Form)
 def sayHello():
     print "Hello there!!!"
 
-# now bin the above functions with buttons
+# now bind the above functions with buttons
 ui.pushButton.clicked.connect(sayHello)
 ui.pushButton_2.clicked.connect(quit)
 

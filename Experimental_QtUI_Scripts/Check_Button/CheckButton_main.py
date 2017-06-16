@@ -26,7 +26,7 @@ def checkStatus():
         print "checkBox_4 is clicked"
 
 
-# now bin the above functions with buttons
+# now bind the above functions with buttons
 ui.checkBox.clicked.connect(checkStatus)
 ui.checkBox_2.clicked.connect(checkStatus)
 ui.checkBox_3.clicked.connect(checkStatus)

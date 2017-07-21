@@ -8,10 +8,11 @@ Author : Pankaj soni
 from PySide import QtCore, QtGui
 import sys
 import threading, time
+import re
 
 import serial.tools.list_ports
 
-from Com_Port import Ui_Form
+from Com_Port_filter import Ui_Form
 
 # Initialize main GUI and use its resources
 app = QtGui.QApplication(sys.argv)
@@ -37,7 +38,7 @@ def connectPort():
     paritybit =ui.comboBox_5.currentText()
     stopbits =ui.comboBox_6.currentText()
     flowcontrol =ui.comboBox_7.currentText()
-    print port,baudarate,datasize,paritybit,stopbits,flowcontrol
+    #~ print port,baudarate,datasize,paritybit,stopbits,flowcontrol
     
     # some values are hardcoded, however based on need it can be changed.
     ser = serial.Serial(port, baudrate=baudarate, bytesize=8, parity='N', stopbits=1, timeout=None, xonxoff=False, rtscts=False, dsrdtr=False)
@@ -47,7 +48,17 @@ def startCapturing():
     while 1:
         tmp = ser.readline()
         #~ print tmp
-        ui.textEdit.append(tmp) 
+        ui.textEdit.append(tmp)
+        filterTxt = ui.lineEdit.text()
+        #~ print "current text is!!!",filterTxt
+        #~ reVar = "'(.*)("+filterTxt+" [0-9]).*'"
+        reVar = filterTxt
+        #~ print "reVar is::",reVar
+        matchObj = re.match(reVar,tmp)
+        if matchObj:
+            tmp2 = matchObj.group(2)
+            #~ print tmp2
+            ui.textEdit_2.append(tmp2)
 
 # Using thread module to make this function non-blocking
 def threadFunc():

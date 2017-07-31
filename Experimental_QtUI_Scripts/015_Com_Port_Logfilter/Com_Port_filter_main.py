@@ -57,7 +57,7 @@ def startCapturing():
         matchObj = re.match(reVar,tmp)
         if matchObj:
             tmp2 = matchObj.group(2)
-            #~ print tmp2
+            print tmp2
             ui.textEdit_2.append(tmp2)
 
 # Using thread module to make this function non-blocking

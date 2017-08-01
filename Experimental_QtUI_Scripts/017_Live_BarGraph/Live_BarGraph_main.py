@@ -47,7 +47,7 @@ def connectPort():
     ser = serial.Serial(port, baudrate=baudarate, bytesize=8, parity='N', stopbits=1, timeout=None, xonxoff=False, rtscts=False, dsrdtr=False)
 
 global b_num,x,y1,y2,y3,y4
-y1,y2,y3,y4 = [],[],[],[]
+y1,y2,y3,y4 = ([],)*4
 x = np.arange(5)
 w1 = pg.PlotWidget(title="Detection Statistics")
 def buttonStatitics(button_num):    

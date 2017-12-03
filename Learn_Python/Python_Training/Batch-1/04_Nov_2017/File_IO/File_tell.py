@@ -1,0 +1,10 @@
+#~ file = open(<filename>)
+# a,ab,a+,ab+
+fh = open("test4.txt","r")
+#~ fh.write("\nThis is line3\n")
+print fh.readline()
+print fh.tell()
+fh.seek(20)
+print fh.readline()
+print fh.tell()
+fh.close()

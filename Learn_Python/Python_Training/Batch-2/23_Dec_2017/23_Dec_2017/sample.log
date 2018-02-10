@@ -1,0 +1,20 @@
+[10:19:49] {log1.py:10} DEBUG - This is a debug message
+[10:19:49] {log1.py:11} INFO - Informational message
+[10:19:49] {log1.py:12} WARNING - An error has happened!
+[10:19:49] {log1.py:13} ERROR - An error has happened!
+[10:19:49] {log1.py:14} CRITICAL - An error has happened!
+
+
+[10:21:50] {log1.py:12} WARNING - warning has happened!
+[10:21:50] {log1.py:13} ERROR - An error has happened!
+[10:21:50] {log1.py:14} CRITICAL - A critical error has happened!
+
+
+[10:22:18] {log1.py:14} CRITICAL - A critical error has happened!
+[10:24:18] {log1.py:14} CRITICAL - A critical error has happened!
+[10:24:22] {log1.py:14} CRITICAL - A critical error has happened!
+[10:24:47] {log1.py:14} CRITICAL - A critical error has happened!
+[10:25:36] {log1.py:17} CRITICAL - A critical error has happened!
+CRITICAL:root:A critical error has happened!
+[2017-12-23 10:28:22,628] A critical error has happened!
+[10:37:43] {log1.py:17} CRITICAL - A critical error has happened!

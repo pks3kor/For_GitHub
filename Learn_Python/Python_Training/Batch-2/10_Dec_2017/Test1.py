@@ -1,0 +1,12 @@
+fh = open("test.txt","w+")
+#~ print dir(fh)
+#~ print fh.fileno()
+print fh.readlines()
+#~ tmp = fh.tell()
+#~ print tmp
+#~ fh.seek(0,2)
+fh.write("B")
+#~ print fh.next()
+#~ print fh.next()
+#~ print fh.next()
+fh.close()

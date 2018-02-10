@@ -1,0 +1,25 @@
+DEBUG:root:This is a debug message
+INFO:root:Informational message
+WARNING:root:An error has happened!
+ERROR:root:An error has happened!
+CRITICAL:root:An error has happened!
+[07:26:17] {logging1.py:4} DEBUG - This is a debug message
+[07:26:17] {logging1.py:5} INFO - Informational message
+[07:26:17] {logging1.py:6} WARNING - An error has happened!
+[07:26:17] {logging1.py:7} ERROR - An error has happened!
+[07:26:17] {logging1.py:8} CRITICAL - An error has happened!
+[07:26:46] {logging1.py:5} DEBUG - This is a debug message
+[07:26:46] {logging1.py:6} INFO - Informational message
+[07:26:46] {logging1.py:7} WARNING - An error has happened!
+[07:26:46] {logging1.py:8} ERROR - An error has happened!
+[07:26:46] {logging1.py:9} CRITICAL - An error has happened!
+[07:26:50] {logging1.py:5} DEBUG - This is a debug message
+[07:26:50] {logging1.py:6} INFO - Informational message
+[07:26:50] {logging1.py:7} WARNING - An error has happened!
+[07:26:50] {logging1.py:8} ERROR - An error has happened!
+[07:26:50] {logging1.py:9} CRITICAL - An error has happened!
+[08:35:56] {logging1.py:5} DEBUG - This is a debug message
+[08:35:56] {logging1.py:6} INFO - Informational message
+[08:35:56] {logging1.py:7} WARNING - An error has happened!
+[08:35:56] {logging1.py:8} ERROR - An error has happened!
+[08:35:56] {logging1.py:9} CRITICAL - An error has happened!

@@ -1,0 +1,12 @@
+# Perform read and write together
+fh = open("read_write_test.txt","rb")
+#~ fh.write("Line1\n")
+#~ fh.write("Line2\n")
+#~ print fh.tell()
+#~ fh.seek(0)
+#~ print fh.read()
+#~ fh.seek(1)
+#~ fh.write("Line3\n")
+#~ fh.write("Line4\n")
+#~ fh.seek(0)
+print fh.read()

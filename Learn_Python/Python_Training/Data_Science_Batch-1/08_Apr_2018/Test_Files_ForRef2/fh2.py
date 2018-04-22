@@ -1,0 +1,8 @@
+fh = open("filetest1.txt","w")
+fh.write("This is line1\n")
+fh.write("This is line2\n")
+#~ print fh.readline()
+#~ print fh.tell()
+#~ fh.seek(-10,2)
+#~ print fh.tell()
+#~ print fh.readline()

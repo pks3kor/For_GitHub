@@ -1,0 +1,7 @@
+#~ fh = open("<filename>","<mode>")
+fh = open("fh.txt")
+print fh.read(2)
+print fh.tell()
+print fh.readline()
+print fh.tell()
+print fh.readline()

@@ -1,0 +1,8 @@
+fh = open("csv_file2.csv","w")
+fh.write("A1,")
+fh.write("A2,")
+fh.write("A3,\n")
+fh.write("1,")
+fh.write("2,")
+fh.write("3,\n")
+fh.close()

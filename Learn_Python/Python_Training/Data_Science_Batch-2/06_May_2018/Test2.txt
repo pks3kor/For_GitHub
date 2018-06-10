@@ -1,0 +1,6 @@
+write1
+write2
+write3
+write1
+write2
+write3

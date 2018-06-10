@@ -94,13 +94,10 @@
     <property name="windowTitle">
      <string>SinWave</string>
     </property>
-    <widget class="QWidget" name="dockWidgetContents">
-     <zorder>dockWidget_2</zorder>
-     <zorder>dockWidget_2</zorder>
-    </widget>
+    <widget class="QWidget" name="dockWidgetContents"/>
    </widget>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>170</x>

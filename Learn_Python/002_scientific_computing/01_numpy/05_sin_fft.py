@@ -17,10 +17,13 @@ n = len(y) # length of the signal
 k = np.arange(n)
 T = n/Fs
 frq = k/T # two sides frequency range
+#~ print frq
 frq = frq[range(n/2)] # one side frequency range
-
+#~ print frq
 Y = np.fft.fft(y)/n # fft computing and normalization
+#~ print Y
 Y = Y[range(n/2)]
+#~ print Y
 
 fig,tmp = plt.subplots(2,1)
 tmp[0].plot(y)
